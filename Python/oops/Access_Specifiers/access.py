@@ -44,3 +44,46 @@ a.access_from_main()
 b.access_from_subclass()
 c.access_from_stragerclass(a)
     
+
+
+myList = []
+
+for i in range(5):
+    myList.append(int(input("Enter a Number: ")))
+
+firstmax = max(myList)
+secondmax = None
+
+for i in myList:
+    if i < firstmax:
+        if secondmax is None or i > secondmax:
+            secondmax = i
+
+if secondmax is None:
+    print("No second-largest distinct number")
+else:
+    print(secondmax)
+
+
+
+
+
+myList = []
+
+for i in range(5):
+    myList.append(int(input("Enter a Number: ")))
+
+for i in range(len(myList)):
+    for j in range(len(myList)):
+        if myList[i] < myList[j]:
+            myList[i], myList[j] = myList[j], myList[i]
+
+secondmax = myList[1]
+print("Second largest:", secondmax)
+
+
+
+
+
+
+
