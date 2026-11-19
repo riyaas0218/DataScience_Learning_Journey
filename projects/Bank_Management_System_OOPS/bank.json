@@ -1,0 +1,81 @@
+[
+    {
+        "name": "Riyas",
+        "account_number": 1001,
+        "balance": 5000,
+        "transactions": [
+            {
+                "type": "Deposit",
+                "amount": 5000,
+                "balance": 5000
+            }
+        ]
+    },
+    {
+        "name": "Arun",
+        "account_number": 1002,
+        "balance": 8000,
+        "transactions": []
+    },
+    {
+        "name": "Iniya",
+        "account_number": 21082004,
+        "balance": 6000,
+        "transactions": [
+            {
+                "type": "Deposit",
+                "amount": 10000,
+                "balance": 10000
+            },
+            {
+                "type": "Withdraw",
+                "amount": 4000,
+                "balance": 6000
+            }
+        ]
+    },
+    {
+        "name": "messi",
+        "account_number": 101010,
+        "balance": 4998,
+        "transactions": [
+            {
+                "type": "Deposit",
+                "amount": 7000,
+                "balance": 7000
+            },
+            {
+                "type": "Withdraw",
+                "amount": 1002,
+                "balance": 5998
+            },
+            {
+                "type": "Transfer sent",
+                "amount": 1000,
+                "balance": 4998
+            }
+        ]
+    },
+    {
+        "name": "ronaldo",
+        "account_number": 70707,
+        "balance": 3500,
+        "transactions": [
+            {
+                "type": "Deposit",
+                "amount": 4000,
+                "balance": 4000
+            },
+            {
+                "type": "Withdraw",
+                "amount": 1500,
+                "balance": 2500
+            },
+            {
+                "type": "Transfer received",
+                "amount": 1000,
+                "balance": 3500
+            }
+        ]
+    }
+]
