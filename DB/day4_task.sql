@@ -106,7 +106,7 @@ select avg(salary)avg_salary from emp1 where dept='Python';
 
 --Task 4
 
-select empname,dept,length(empname) len_name from emp1 where (empname LIKE 'A%' OR empname LIKE 'R%') and salary >=30000
+select empname,dept,length(empname) len_name from emp1 where (empname like 'A%' OR empname LIKE 'R%') and salary >=30000
 order by len_name desc;
 
 --task 5
@@ -116,3 +116,23 @@ select max(salary) max_salary,min(salary) min_salary from emp1 where dept in ('J
 
 --task 6
 select distinct city from emp1  where (empname like '%a%') and salary>=35000  order by city desc;
+
+--task 7
+select  lower(empname),left(empname,3 ) first_three ,salary from emp1 where age between 23 and 28 order by salary ;
+
+--task 8
+select dept from emp1;
+select sum(salary) total_salary from emp1 where dept='HR' and  city in ('chennai','Trichy');
+
+--task 9
+select empname,dept,length(empname) lengthofname from emp1 where empname like '%e' and salary>30000 order by
+dept asc,lengthofname asc;
+
+--task 10
+select count(empname) from emp1 where dept in ('Python','Java') and salary >35000;
+
+
+
+---second largest salary
+
+select max(salary) from emp1 where salary<(select max(salary) from emp1);
